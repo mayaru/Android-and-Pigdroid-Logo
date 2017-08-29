@@ -131,5 +131,3 @@ div div {background-color: pink; position: relative;}
 .right-arm:hover {
   transform: rotate(-20deg) translate(10px);
 }
-
-.snuck {}
