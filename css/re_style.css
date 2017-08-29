@@ -1,0 +1,133 @@
+div {margin: 0; padding: 0;}
+div div {background-color: pink; position: relative;}
+
+.android {
+  width: 400px;
+  height: 345px;
+  margin: 120px auto;
+}
+
+.head {
+  height: 110px;
+  width: 240px;
+  border-radius: 110px 110px 0px 0px;
+}
+
+.nose {
+  width: 40px;
+  height: 30px;
+  border: 3px solid #fff;
+  top: 60px;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.left-nostril, .right-nostril {
+  position: absolute;
+  top: 10px;
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.left-nostril {
+  left: 5px;
+}
+.right-nostril {
+  right: 5px;
+}
+
+.left-eye, .right-eye {
+  position: absolute;
+  background-color: green;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  top: 50px;
+  border: 3px solid red;
+}
+
+.left-eye {
+  left: 50px;
+}
+.right-eye {
+  right: 50px;
+}
+
+.left-antenna, .right-antenna {
+  position: absolute;
+  top: -15px;
+  height: 50px;
+  width: 30px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.left-antenna {
+  left: 36px;
+  transform: rotate(-30deg);
+}
+
+.right-antenna {
+  right: 36px;
+  transform: rotate(30deg);
+}
+
+.body {
+  height: 240px;
+  width: 240px;
+  top: 8px;
+  border-radius: 0px 0px 30px 30px;
+}
+
+.left-arm, .right-arm {
+  position: absolute;
+  width: 60px;
+  height: 120px;
+  border-radius: 35px;
+}
+
+.left-arm {
+  left: -68px;
+}
+.right-arm {
+  right: -68px;
+}
+
+.left-foot, .right-foot {
+  position: absolute;
+  width: 65px;
+  height: 140px;
+  border-radius: 35px;
+  top: 170px;
+}
+
+.left-foot {
+  left: -30px;
+}
+.right-foot {
+  right: -30px;
+}
+.tail {
+  position: absolute;
+  width: 7px;
+  height: 30px;
+  top: 230px;
+  right: 60px;
+  transform: rotate(-30deg);
+  border-radius: 10px;
+}
+
+/* -- Animations -- */
+
+.left-arm, .right-arm, .head {
+  transition: all 0.1s ease-in;
+}
+.head:hover {
+  transform: rotate(5deg) translate(4px, -10px);
+}
+.left-arm:hover {
+  transform: rotate(30deg) translate(-14px);
+}
+.right-arm:hover {
+  transform: rotate(-20deg) translate(10px);
+}
