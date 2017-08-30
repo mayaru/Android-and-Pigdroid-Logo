@@ -122,12 +122,12 @@ div div {background-color: pink; position: relative;}
 .left-arm, .right-arm, .head {
   transition: all 0.1s ease-in;
 }
-.head:hover {
+.android:hover .head {
   transform: rotate(5deg) translate(4px, -10px);
 }
 .left-arm:hover {
   transform: rotate(30deg) translate(-14px);
 }
-.right-arm:hover {
+.android:hover .right-arm {
   transform: rotate(-20deg) translate(10px);
 }
